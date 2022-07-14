@@ -138,7 +138,9 @@ async def advantage_spoll_choker(bot, query):
             k = await query.message.edit('This Movie Not Found In DataBase')
             await asyncio.sleep(10)
             await k.delete()
-
+        buttons = [[
+            InlineKeyboardButton('🎭 𝐆𝐫𝐨𝐮𝐩 🎭', url='https://t.me/movies_club_2018') 
+         ]]
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
